@@ -24,6 +24,9 @@ client.on('interactionCreate', async interaction => {
 	else if (commandName === 'user') {
 		await interaction.reply(`Your tag: ${interaction.user.tag}\nYour id: ${interaction.user.id}`);
 	}
+	else if (commandName === 'beep') {
+		await interaction.reply('Boop!');
+	}
 });
 
 // Login to Discord with your client's token
